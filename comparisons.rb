@@ -104,15 +104,23 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
+# true
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
+# false
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
+# true
 
 # Determine if the dog loves to play and is a puppy
-
+if age < 1 && loves_to_play == true
+	puts true
+else
+	puts false
+end
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# I determined that dogs less the 1 are puppies
+# ANSWER:false
